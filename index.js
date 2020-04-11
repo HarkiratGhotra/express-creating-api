@@ -1,7 +1,8 @@
 const express = require('express');
 const Joi = require('joi');
 const app = express();
-
+var cors = require('cors');
+app.use(cors())
 app.use(express.json());
 
 const courses = [
